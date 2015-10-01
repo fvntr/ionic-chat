@@ -29,6 +29,4 @@ angular.module('starter', ['ionic'])
       templateUrl: 'templates/chat.html'
     });
 
-     $urlRouterProvider.otherwise('/login');
-
 })
