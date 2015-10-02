@@ -29,9 +29,12 @@ angular.module('starter', ['ionic'])
       templateUrl: 'templates/chat.html'
     });
 
+  $urlRouterProvider.otherwise('/login');
+
+
 })
 
-.controller(function($scope){
+.controller('LoginController', function($scope){
   $scope.join = function(nickname){
     alert(nickname);
   }
