@@ -30,3 +30,10 @@ angular.module('starter', ['ionic'])
     });
 
 })
+
+.controller(function($scope){
+  $scope.join = function(nickname){
+    alert(nickname);
+  }
+
+})

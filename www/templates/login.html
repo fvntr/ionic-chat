@@ -1,2 +1,19 @@
-<h1> test chat </h1>
-<a href="/#/chat"> chat here </a>
+<ion-view ng-controller ="LoginController">
+	<ion-header-bar class="bar-dark">
+		<div class="title">Ionichat</div>
+	</ion-header-bar>
+	
+	<ion-content>
+		<div class="list">
+			<div class="item item-input padding">
+				<label class="item-input-wrapper">
+					<input type="text" placeholder="name" ng-model="nickname">
+				</label>
+			</div>	
+		</div>
+		<button class="button button-small button-dark icon icon-right ion-log-in" ng-click = "join(nickname)">
+			login
+		</button>
+		</div>
+	</ion-content> 
+</ion-view>
