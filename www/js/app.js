@@ -34,9 +34,14 @@ angular.module('starter', ['ionic'])
 
 })
 
-.controller('LoginController', function($scope){
+.controller('LoginController', function($scope, $state){
   $scope.join = function(nickname){
-    alert(nickname);
+    if(nickname){
+      $state.go('chat'); 
+    }
   }
+})
+
+.controller('ChatController', function($scope){
 
 })
