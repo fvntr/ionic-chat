@@ -42,7 +42,7 @@ angular.module('starter', ['ionic'])
   }
 })
 
-.controller('ChatController', function($scope){
+.controller('ChatController', function($scope, $stateParams){
 
   $scope.nickname = $stateParams.nickname;
 
