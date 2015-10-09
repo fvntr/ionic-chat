@@ -58,7 +58,11 @@ angular.module('starter', ['ionic', 'btford.socket-io'])
 
   Socket.on("connect", function(){
     Socket.emit("Message", data);
-  })
+  });
+
+  Socket.on("Message", function(){
+    alert(data.message);
+  });
 
   $scope.nickname = $stateParams.nickname;
 
